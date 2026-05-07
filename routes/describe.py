@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
+from services.validator import validate_text
 from datetime import datetime
 
 describe_bp = Blueprint("describe", __name__)
@@ -10,18 +11,20 @@ def describe():
 
     data = request.get_json()
 
-    # Validate input
     if not data or "text" not in data:
         return jsonify({
             "error": "text field is required"
         }), 400
 
-    user_input = data.get("text").strip()
+    # Validate input
+    is_valid, result = validate_text(data.get("text"))
 
-    if user_input == "":
+    if not is_valid:
         return jsonify({
-            "error": "input cannot be empty"
+            "error": result
         }), 400
+
+    user_input = result
 
     # Load prompt template
     with open("prompts/describe_prompt.txt", "r") as file:
@@ -29,12 +32,11 @@ def describe():
 
     final_prompt = template.replace("{user_input}", user_input)
 
-    # Call Groq
-    result = call_groq(final_prompt)
+    # Call AI
+    ai_result = call_groq(final_prompt)
 
-    # Return structured JSON
     return jsonify({
         "input": user_input,
-        "result": result,
+        "result": ai_result,
         "generated_at": datetime.now().isoformat()
     })

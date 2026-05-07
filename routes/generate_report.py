@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
+from services.validator import validate_text
 import json
 
 report_bp = Blueprint("report", __name__)
@@ -10,18 +11,20 @@ def generate_report():
 
     data = request.get_json()
 
-    # Validation
     if not data or "text" not in data:
         return jsonify({
             "error": "text field is required"
         }), 400
 
-    user_input = data.get("text").strip()
+    # Validate input
+    is_valid, result = validate_text(data.get("text"))
 
-    if user_input == "":
+    if not is_valid:
         return jsonify({
-            "error": "input cannot be empty"
+            "error": result
         }), 400
+
+    user_input = result
 
     # Load prompt
     with open("prompts/report_prompt.txt", "r") as file:
@@ -30,14 +33,16 @@ def generate_report():
     final_prompt = template.replace("{user_input}", user_input)
 
     # Call AI
-    result = call_groq(final_prompt)
+    ai_result = call_groq(final_prompt)
 
     try:
-        parsed_result = json.loads(result)
+        parsed_result = json.loads(ai_result)
+
         return jsonify(parsed_result)
 
     except Exception:
+
         return jsonify({
             "error": "Invalid AI response",
-            "raw_response": result
+            "raw_response": ai_result
         }), 500
