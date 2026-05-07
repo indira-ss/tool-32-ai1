@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
 from services.validator import validate_text
 import json
+from services.logger import logger
 
 report_bp = Blueprint("report", __name__)
 
@@ -25,7 +26,7 @@ def generate_report():
         }), 400
 
     user_input = result
-
+    logger.info(f"/generate-report called with input: {user_input}")
     # Load prompt
     with open("prompts/report_prompt.txt", "r") as file:
         template = file.read()
@@ -41,7 +42,7 @@ def generate_report():
         return jsonify(parsed_result)
 
     except Exception:
-
+        logger.error("Invalid AI response in /generate-report")
         return jsonify({
             "error": "Invalid AI response",
             "raw_response": ai_result

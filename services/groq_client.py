@@ -1,10 +1,14 @@
-import requests
 import os
+import requests
 from dotenv import load_dotenv
 
-load_dotenv()
+# FORCE reload env every time
+load_dotenv(override=True)
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+print("ACTIVE GROQ KEY =", GROQ_API_KEY)
+
 
 URL = "https://api.groq.com/openai/v1/chat/completions"
 
@@ -38,11 +42,9 @@ def call_groq(prompt):
 
         data = response.json()
 
-        # Handle API errors
         if "error" in data:
             return f"Groq API Error: {data['error']['message']}"
 
-        # Handle invalid response
         if "choices" not in data:
             return "AI response unavailable"
 

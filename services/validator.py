@@ -21,4 +21,4 @@ def validate_text(text):
     # Basic sanitization
     cleaned_text = re.sub(r"[<>]", "", text)
 
-    return True, cleaned_texts
+    return True, cleaned_text

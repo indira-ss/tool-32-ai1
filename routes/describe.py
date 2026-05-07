@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
 from services.validator import validate_text
 from datetime import datetime
-
+from services.logger import logger
 describe_bp = Blueprint("describe", __name__)
 
 
@@ -25,7 +25,7 @@ def describe():
         }), 400
 
     user_input = result
-
+    logger.info(f"/describe called with input: {user_input}")
     # Load prompt template
     with open("prompts/describe_prompt.txt", "r") as file:
         template = file.read()

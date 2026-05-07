@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
 from services.validator import validate_text
 import json
-
+from services.logger import logger
 recommend_bp = Blueprint("recommend", __name__)
 
 
@@ -25,7 +25,7 @@ def recommend():
         }), 400
 
     user_input = result
-
+    logger.info(f"/recommend called with input: {user_input}")
     # Load prompt
     with open("prompts/recommend_prompt.txt", "r") as file:
         template = file.read()
@@ -40,7 +40,9 @@ def recommend():
         return jsonify(parsed_result)
 
     except Exception:
+        logger.error("Invalid AI response in /recommend")
         return jsonify({
             "error": "Invalid AI response",
-            "raw_response": ai_result
+            "raw_response": ai_result,
+
         }), 500
