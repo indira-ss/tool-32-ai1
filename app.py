@@ -3,13 +3,15 @@ from flask import Flask
 from routes.describe import describe_bp
 from routes.generate_report import report_bp
 from routes.health import health_bp
-
+from flask import render_template
 app = Flask(__name__)
 
 app.register_blueprint(describe_bp)
 app.register_blueprint(report_bp)
 app.register_blueprint(health_bp)
-
+@app.route("/ui")
+def ui():
+    return render_template("index.html")
 
 @app.route("/")
 def home():
