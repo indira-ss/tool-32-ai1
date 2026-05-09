@@ -1,8 +1,7 @@
 from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
-from services.validator import validate_text
+from datetime import datetime
 import json
-from services.logger import logger
 
 report_bp = Blueprint("report", __name__)
 
@@ -12,38 +11,41 @@ def generate_report():
 
     data = request.get_json()
 
-    if not data or "text" not in data:
-        return jsonify({
-            "error": "text field is required"
-        }), 400
+    text = data.get("text")
 
-    # Validate input
-    is_valid, result = validate_text(data.get("text"))
+    prompt = f"""
+Generate a report for: {text}
 
-    if not is_valid:
-        return jsonify({
-            "error": result
-        }), 400
+Return ONLY valid JSON.
 
-    user_input = result
-    logger.info(f"/generate-report called with input: {user_input}")
-    # Load prompt
-    with open("prompts/report_prompt.txt", "r") as file:
-        template = file.read()
+Required format:
 
-    final_prompt = template.replace("{user_input}", user_input)
+{{
+    "title": "",
+    "summary": "",
+    "overview": "",
+    "key_items": [],
+    "recommendations": []
+}}
+"""
 
-    # Call AI
-    ai_result = call_groq(final_prompt)
+    result = call_groq(prompt)
 
     try:
-        parsed_result = json.loads(ai_result)
+        # Remove markdown formatting
+        cleaned_result = result.replace("```json", "").replace("```", "").strip()
 
-        return jsonify(parsed_result)
+        # Convert string response to JSON
+        parsed_result = json.loads(cleaned_result)
 
-    except Exception:
-        logger.error("Invalid AI response in /generate-report")
+        return jsonify({
+            "generated_at": datetime.now().isoformat(),
+            "input": text,
+            "result": parsed_result
+        })
+
+    except Exception as e:
         return jsonify({
             "error": "Invalid AI response",
-            "raw_response": ai_result
-        }), 500
+            "raw_response": result
+        })

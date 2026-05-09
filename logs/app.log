@@ -61,3 +61,144 @@
 2026-05-07 11:09:10,577 - INFO -  * Debugger PIN: 139-524-243
 2026-05-07 11:10:52,768 - INFO - /describe called with input: how to learn python
 2026-05-07 11:10:57,245 - INFO - 127.0.0.1 - - [07/May/2026 11:10:57] "POST /describe HTTP/1.1" 200 -
+2026-05-09 08:21:17,854 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 08:21:17,854 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 08:21:17,860 - INFO -  * Restarting with stat
+2026-05-09 08:21:19,176 - WARNING -  * Debugger is active!
+2026-05-09 08:21:19,194 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 08:25:08,146 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 08:25:08,147 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 08:25:08,150 - INFO -  * Restarting with stat
+2026-05-09 08:25:09,132 - WARNING -  * Debugger is active!
+2026-05-09 08:25:09,146 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:07:31,557 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:07:31,558 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:07:31,561 - INFO -  * Restarting with stat
+2026-05-09 09:07:32,783 - WARNING -  * Debugger is active!
+2026-05-09 09:07:32,792 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:09:20,436 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 09:09:20,438 - ERROR - Invalid AI response in /generate-report
+2026-05-09 09:09:20,439 - INFO - 127.0.0.1 - - [09/May/2026 09:09:20] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 09:09:43,239 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 09:09:43,240 - ERROR - Invalid AI response in /generate-report
+2026-05-09 09:09:43,240 - INFO - 127.0.0.1 - - [09/May/2026 09:09:43] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 09:15:56,493 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:15:56,494 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:15:56,497 - INFO -  * Restarting with stat
+2026-05-09 09:15:57,929 - WARNING -  * Debugger is active!
+2026-05-09 09:15:57,940 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:16:49,653 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 09:16:49,655 - ERROR - Invalid AI response in /generate-report
+2026-05-09 09:16:49,661 - INFO - 127.0.0.1 - - [09/May/2026 09:16:49] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 09:22:07,543 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\services\\groq_client.py', reloading
+2026-05-09 09:22:08,169 - INFO -  * Restarting with stat
+2026-05-09 09:24:04,236 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:24:04,237 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:24:04,245 - INFO -  * Restarting with stat
+2026-05-09 09:24:06,875 - WARNING -  * Debugger is active!
+2026-05-09 09:24:06,883 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:28:02,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:28:02,616 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:28:02,621 - INFO -  * Restarting with stat
+2026-05-09 09:28:05,126 - WARNING -  * Debugger is active!
+2026-05-09 09:28:05,338 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:30:09,177 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\app.py', reloading
+2026-05-09 09:30:09,204 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\app.py', reloading
+2026-05-09 09:30:11,015 - INFO -  * Restarting with stat
+2026-05-09 09:30:11,150 - INFO -  * Restarting with stat
+2026-05-09 09:35:17,463 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.228.28.135:5000
+2026-05-09 09:35:17,464 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:35:17,467 - INFO -  * Restarting with stat
+2026-05-09 09:35:19,747 - WARNING -  * Debugger is active!
+2026-05-09 09:35:19,765 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:35:32,633 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.228.28.135:5000
+2026-05-09 09:35:32,635 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:35:32,639 - INFO -  * Restarting with stat
+2026-05-09 09:35:34,643 - WARNING -  * Debugger is active!
+2026-05-09 09:35:34,655 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:41:47,128 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\app.py', reloading
+2026-05-09 09:41:50,842 - INFO -  * Restarting with stat
+2026-05-09 09:41:57,499 - WARNING -  * Debugger is active!
+2026-05-09 09:41:57,640 - INFO -  * Debugger PIN: 139-524-243
+2026-05-09 09:42:23,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:42:23,354 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:45:35,532 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:45:35,533 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:46:12,305 - INFO - 127.0.0.1 - - [09/May/2026 09:46:12] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2026-05-09 09:53:55,592 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:53:55,593 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:55:50,426 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:55:50,427 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 09:56:18,830 - INFO - 127.0.0.1 - - [09/May/2026 09:56:18] "GET /health HTTP/1.1" 200 -
+2026-05-09 09:56:18,983 - INFO - 127.0.0.1 - - [09/May/2026 09:56:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-09 09:59:23,984 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-09 09:59:23,985 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-09 10:15:29,664 - INFO - 127.0.0.1 - - [09/May/2026 10:15:29] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:16:32,273 - INFO - 127.0.0.1 - - [09/May/2026 10:16:32] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:16:44,337 - INFO - 127.0.0.1 - - [09/May/2026 10:16:44] "[31m[1mGET /describe HTTP/1.1[0m" 405 -
+2026-05-09 10:17:33,323 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 10:17:35,954 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 10:17:35,962 - ERROR - Invalid AI response in /generate-report
+2026-05-09 10:17:35,964 - INFO - 127.0.0.1 - - [09/May/2026 10:17:35] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 10:33:36,114 - INFO - 127.0.0.1 - - [09/May/2026 10:33:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:35:42,324 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 10:35:43,101 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 10:35:43,106 - ERROR - Invalid AI response in /generate-report
+2026-05-09 10:35:43,110 - INFO - 127.0.0.1 - - [09/May/2026 10:35:43] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 10:40:18,452 - INFO - 127.0.0.1 - - [09/May/2026 10:40:18] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:44:01,373 - INFO - 127.0.0.1 - - [09/May/2026 10:44:01] "GET /health HTTP/1.1" 200 -
+2026-05-09 10:44:38,244 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 10:44:38,737 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 10:44:38,746 - ERROR - Invalid AI response in /generate-report
+2026-05-09 10:44:38,747 - INFO - 127.0.0.1 - - [09/May/2026 10:44:38] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 10:55:03,978 - INFO - 127.0.0.1 - - [09/May/2026 10:55:03] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:57:21,553 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 10:57:21,879 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 10:57:21,888 - ERROR - Invalid AI response in /generate-report
+2026-05-09 10:57:21,891 - INFO - 127.0.0.1 - - [09/May/2026 10:57:21] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 10:58:22,614 - INFO - 127.0.0.1 - - [09/May/2026 10:58:22] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 10:58:39,594 - INFO - 127.0.0.1 - - [09/May/2026 10:58:39] "[31m[1mGET /generate-report HTTP/1.1[0m" 405 -
+2026-05-09 10:59:35,225 - INFO - 127.0.0.1 - - [09/May/2026 10:59:35] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 11:01:20,424 - INFO - 127.0.0.1 - - [09/May/2026 11:01:20] "GET /health HTTP/1.1" 200 -
+2026-05-09 11:02:44,106 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 11:02:44,589 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 11:02:44,598 - ERROR - Invalid AI response in /generate-report
+2026-05-09 11:02:44,600 - INFO - 127.0.0.1 - - [09/May/2026 11:02:44] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 11:04:43,924 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 11:04:44,233 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 11:04:44,238 - ERROR - Invalid AI response in /generate-report
+2026-05-09 11:04:44,245 - INFO - 127.0.0.1 - - [09/May/2026 11:04:44] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 11:07:47,542 - INFO - 127.0.0.1 - - [09/May/2026 11:07:47] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 11:07:59,393 - INFO - 127.0.0.1 - - [09/May/2026 11:07:59] "GET /health HTTP/1.1" 200 -
+2026-05-09 11:12:23,574 - INFO - 127.0.0.1 - - [09/May/2026 11:12:23] "[33mGET / HTTP/1.1[0m" 404 -
+2026-05-09 11:12:32,788 - INFO - 127.0.0.1 - - [09/May/2026 11:12:32] "GET /health HTTP/1.1" 200 -
+2026-05-09 11:16:05,628 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 11:16:06,075 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 11:16:06,083 - ERROR - Invalid AI response in /generate-report
+2026-05-09 11:16:06,093 - INFO - 127.0.0.1 - - [09/May/2026 11:16:06] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 11:17:02,401 - INFO - /generate-report called with input: AI in healthcare
+2026-05-09 11:17:02,664 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 11:17:02,666 - ERROR - Invalid AI response in /generate-report
+2026-05-09 11:17:02,666 - INFO - 127.0.0.1 - - [09/May/2026 11:17:02] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
+2026-05-09 11:26:10,563 - INFO - 127.0.0.1 - - [09/May/2026 11:26:10] "[31m[1mPOST /generate-report HTTP/1.1[0m" 415 -
+2026-05-09 11:28:45,365 - INFO - /generate-report called with input: Machine learning
+2026-05-09 11:28:45,820 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-09 11:28:45,830 - ERROR - Invalid AI response in /generate-report
+2026-05-09 11:28:45,840 - INFO - 127.0.0.1 - - [09/May/2026 11:28:45] "[35m[1mPOST /generate-report HTTP/1.1[0m" 500 -
