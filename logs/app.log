@@ -1,0 +1,63 @@
+2026-05-07 09:20:53,214 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 09:20:53,215 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 09:20:53,219 - INFO -  * Restarting with stat
+2026-05-07 09:20:54,362 - WARNING -  * Debugger is active!
+2026-05-07 09:20:54,383 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:22:37,054 - INFO - 127.0.0.1 - - [07/May/2026 09:22:37] "[35m[1mPOST /describe HTTP/1.1[0m" 500 -
+2026-05-07 09:24:22,724 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\services\\validator.py', reloading
+2026-05-07 09:24:23,373 - INFO -  * Restarting with stat
+2026-05-07 09:24:25,077 - WARNING -  * Debugger is active!
+2026-05-07 09:24:25,089 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:24:56,953 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 09:24:56,954 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 09:24:56,957 - INFO -  * Restarting with stat
+2026-05-07 09:24:57,983 - WARNING -  * Debugger is active!
+2026-05-07 09:24:57,992 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:25:08,186 - INFO - /describe called with input: how to learn python
+2026-05-07 09:25:09,172 - INFO - 127.0.0.1 - - [07/May/2026 09:25:09] "POST /describe HTTP/1.1" 200 -
+2026-05-07 09:26:34,298 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 09:26:34,299 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 09:26:34,302 - INFO -  * Restarting with stat
+2026-05-07 09:26:35,261 - WARNING -  * Debugger is active!
+2026-05-07 09:26:35,267 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:26:52,891 - INFO - /describe called with input: how to learn python
+2026-05-07 09:26:53,854 - INFO - 127.0.0.1 - - [07/May/2026 09:26:53] "POST /describe HTTP/1.1" 200 -
+2026-05-07 09:28:05,791 - INFO - /describe called with input: how to learn python
+2026-05-07 09:28:07,438 - INFO - 127.0.0.1 - - [07/May/2026 09:28:07] "POST /describe HTTP/1.1" 200 -
+2026-05-07 09:29:27,655 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\services\\groq_client.py', reloading
+2026-05-07 09:29:27,905 - INFO -  * Restarting with stat
+2026-05-07 09:29:30,419 - WARNING -  * Debugger is active!
+2026-05-07 09:29:30,430 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:30:14,802 - INFO -  * Detected change in 'C:\\Users\\new\\PycharmProjects\\PythonProject\\tool-32-ai\\ai-service\\services\\groq_client.py', reloading
+2026-05-07 09:30:14,932 - INFO -  * Restarting with stat
+2026-05-07 09:32:14,420 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 09:32:14,420 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 09:32:14,423 - INFO -  * Restarting with stat
+2026-05-07 09:32:15,457 - WARNING -  * Debugger is active!
+2026-05-07 09:32:15,470 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 09:32:38,891 - INFO - /describe called with input: how to learn python
+2026-05-07 09:32:48,547 - INFO - 127.0.0.1 - - [07/May/2026 09:32:48] "POST /describe HTTP/1.1" 200 -
+2026-05-07 09:35:52,416 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 09:35:52,416 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 09:35:52,420 - INFO -  * Restarting with stat
+2026-05-07 09:35:53,468 - WARNING -  * Debugger is active!
+2026-05-07 09:35:53,493 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 11:07:54,069 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 11:07:54,069 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 11:07:54,073 - INFO -  * Restarting with stat
+2026-05-07 11:07:55,148 - WARNING -  * Debugger is active!
+2026-05-07 11:07:55,166 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 11:09:09,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 11:09:09,114 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-07 11:09:09,117 - INFO -  * Restarting with stat
+2026-05-07 11:09:10,567 - WARNING -  * Debugger is active!
+2026-05-07 11:09:10,577 - INFO -  * Debugger PIN: 139-524-243
+2026-05-07 11:10:52,768 - INFO - /describe called with input: how to learn python
+2026-05-07 11:10:57,245 - INFO - 127.0.0.1 - - [07/May/2026 11:10:57] "POST /describe HTTP/1.1" 200 -
