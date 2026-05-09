@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tool-32 AI Service
 
 AI-powered microservice built using Flask and Groq API.
@@ -177,3 +178,6 @@ docker run -p 5000:5000 tool-32-ai
 # Author
 
 Indira S Gowda
+=======
+# Procedure Documentation Tool
+>>>>>>> cf09fba610074f81d293e542eba3de193027b72c
