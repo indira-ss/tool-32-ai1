@@ -21,7 +21,12 @@ def health():
         "status": "running",
         "service": "AI Service is live"
     })
-
+@app.route("/")
+def home():
+    return {
+        "message": "AI Service is running",
+        "status": "success"
+    }
 
 # -------------------------
 # AI REPORT GENERATION
