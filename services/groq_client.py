@@ -39,10 +39,17 @@ def call_groq(prompt):
         TOTAL_RESPONSE_TIME += response_time
         TOTAL_REQUESTS += 1
 
-        return response.choices[0].message.content
+        return {
+            "success": True,
+            "data": response.choices[0].message.content
+        }
 
     except Exception as e:
-        return f"AI service error: {str(e)}"
+
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 
 def get_average_response_time():

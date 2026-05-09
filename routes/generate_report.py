@@ -44,13 +44,48 @@ Required format:
 }}
 """
 
-    result = call_groq(prompt)
+    ai_response = call_groq(prompt)
+
+    # FALLBACK RESPONSE
+    if not ai_response["success"]:
+
+        fallback_response = {
+            "title": "Fallback AI Report",
+            "summary": "AI service temporarily unavailable.",
+            "overview": f"Fallback response generated for: {text}",
+            "key_items": [
+                "Fallback mode activated",
+                "Groq service unavailable"
+            ],
+            "recommendations": [
+                "Try again later",
+                "Check Groq API status"
+            ],
+            "is_fallback": True
+        }
+
+        return jsonify({
+            "cached": False,
+            "generated_at": datetime.now().isoformat(),
+            "input": text,
+            "result": fallback_response
+        })
 
     try:
 
-        cleaned_result = result.replace("```json", "").replace("```", "").strip()
+        result = ai_response["data"]
+
+        cleaned_result = result.replace(
+            "```json",
+            ""
+        ).replace(
+            "```",
+            ""
+        ).strip()
 
         parsed_result = json.loads(cleaned_result)
+
+        parsed_result["is_fallback"] = False
 
         set_cached_response(text, parsed_result)
 
@@ -63,7 +98,22 @@ Required format:
 
     except Exception:
 
+        fallback_response = {
+            "title": "Fallback AI Report",
+            "summary": "Invalid AI response received.",
+            "overview": f"Fallback response generated for: {text}",
+            "key_items": [
+                "Response parsing failed"
+            ],
+            "recommendations": [
+                "Retry request"
+            ],
+            "is_fallback": True
+        }
+
         return jsonify({
-            "error": "Invalid AI response",
-            "raw_response": result
+            "cached": False,
+            "generated_at": datetime.now().isoformat(),
+            "input": text,
+            "result": fallback_response
         })
