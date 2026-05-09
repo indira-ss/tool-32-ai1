@@ -16,7 +16,7 @@ def generate_report():
                 "status": "error",
                 "message": "Missing 'text' field"
             }), 400
-
+        request_count = {}
         user_input = data["text"]
 
         response = client.chat.completions.create(
