@@ -1,24 +1,42 @@
+import app
+
 from flask import Flask, request, jsonify
+from dotenv import load_dotenv
 from groq import Groq
 import os
 
-app = Flask(__name__)
-
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 @app.route("/generate-report", methods=["POST"])
 def generate_report():
-    data = request.get_json()
-    text = data.get("text")
+    try:
+        data = request.get_json()
 
-    response = client.chat.completions.create(
-        model="llama3-8b-8192",
-        messages=[
-            {"role": "user", "content": f"Generate AI report for: {text}"}
-        ]
-    )
+        if not data or "text" not in data:
+            return jsonify({
+                "status": "error",
+                "message": "Missing 'text' field"
+            }), 400
 
-    return jsonify({
-        "input": text,
-        "result": response.choices[0].message.content
-    })
+        user_input = data["text"]
+
+        response = client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"Generate a structured AI report for: {user_input}"
+                }
+            ]
+        )
+
+        return jsonify({
+            "status": "success",
+            "input": user_input,
+            "result": response.choices[0].message.content
+        })
+
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
