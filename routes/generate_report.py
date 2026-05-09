@@ -1,5 +1,9 @@
 from flask import Blueprint, request, jsonify
 from services.groq_client import call_groq
+from services.cache_service import (
+    get_cached_response,
+    set_cached_response
+)
 from datetime import datetime
 import json
 
@@ -12,6 +16,17 @@ def generate_report():
     data = request.get_json()
 
     text = data.get("text")
+
+    cached_response = get_cached_response(text)
+
+    if cached_response:
+
+        return jsonify({
+            "cached": True,
+            "generated_at": datetime.now().isoformat(),
+            "input": text,
+            "result": cached_response
+        })
 
     prompt = f"""
 Generate a report for: {text}
@@ -32,19 +47,22 @@ Required format:
     result = call_groq(prompt)
 
     try:
-        # Remove markdown formatting
+
         cleaned_result = result.replace("```json", "").replace("```", "").strip()
 
-        # Convert string response to JSON
         parsed_result = json.loads(cleaned_result)
 
+        set_cached_response(text, parsed_result)
+
         return jsonify({
+            "cached": False,
             "generated_at": datetime.now().isoformat(),
             "input": text,
             "result": parsed_result
         })
 
-    except Exception as e:
+    except Exception:
+
         return jsonify({
             "error": "Invalid AI response",
             "raw_response": result
