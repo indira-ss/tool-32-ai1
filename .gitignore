@@ -1,0 +1,10 @@
+.env
+<<<<<<< HEAD
+.venv/
+=======
+__pycache__/
+*.pyc
+venv/
+*.log
+.vscode/
+>>>>>>> cf09fba610074f81d293e542eba3de193027b72c
