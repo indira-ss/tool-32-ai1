@@ -1,22 +1,58 @@
-# 🤖 AI Service (Flask + Groq + Redis)
+# AI Service API
 
-A lightweight AI backend service built using **Flask**, integrated with **Groq LLM**, **Redis caching**, and performance monitoring.
+## Overview
+AI-powered Flask backend using Groq API.
 
----
+## Features
+- AI report generation
+- Health endpoint
+- Docker support
+- Render deployment
 
-# 📁 Project Structure
+## Run Project
 
+Create virtual environment:
 
----
-
-# ⚙️ Setup Instructions
-
-## 1. Clone Project
 ```bash
-git clone https://github.com/your-username/tool-32-ai.git
-cd ai-service
-## Security Testing (OWASP ZAP)
+python -m venv .venv
+```
 
-- Performed active scan on deployed API
-- Fixed critical security headers
-- Improved API security posture
+Activate:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run server:
+
+```bash
+python app.py
+```
+
+## API Endpoints
+
+### Root
+GET /
+
+### Health
+GET /health
+
+### Generate Report
+POST /generate-report
+
+Example request:
+
+```json
+{
+  "text": "AI in healthcare"
+}
+```
+
+## Deployment
+Hosted on Render.
